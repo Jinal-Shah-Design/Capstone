@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Currency Conversion{% endblock %}
+
+{% block content %}
+<div id="home"class="container d-flex flex-column justify-content-center">
+<h1 id="title">Convert Currency!</h1>
+<form id="fill-form" action="/result">
+  <div class="form-group">
+    <label for="currencyconvertedfrom">Converting From:</label>
+    <input type="text" class="form-control" id="curr1" name="currencyOne"placeholder="Enter Currency Code">
+  </div>
+  <div class="form-group">
+    <label for="currencyconvertedto">Converting To:</label>
+    <input type="text" class="form-control" id="curr2" name="currencyTwo" placeholder="Enter Currency Code">
+  </div>
+  <div class="form-group">
+    <label for="amountbeingconverted">Amount to Convert:</label>
+    <input type="text" class="form-control" id="amt" name="amount" placeholder="Enter Amount">
+  </div>
+  <input id="home-button" type="submit" class="btn btn-info btn-lg mt-4" value="Submit">
+</form>
+</div>
+{% endblock %}USD
+
